@@ -1,0 +1,511 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ISSA</title>
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/fixed.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/cover/">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">    
+    <style>
+.large-header {
+   position: relative;
+   width: 100%;
+   background: #111;
+   overflow: hidden;
+   background-size: cover;
+   background-position: center center;
+   z-index: 1;
+}
+
+.demo .large-header {
+  /*background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");*/
+}
+
+.main-title {
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   color: #F9F1E9;
+   text-align: center;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate3d(-50%, -50%, 0);
+   transform: translate3d(-50%, -50%, 0);
+}
+
+.demo .main-title {
+   text-transform: uppercase;
+   font-size: 4.2em;
+   letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+   font-weight: 200;
+}
+
+@media only screen and (max-width: 768px) {
+   .demo .main-title {
+      font-size: 3em;
+   }
+}
+.inner-cover {
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          top: 65%;
+        }
+#bottomfot{
+   background-color: #1c1d1f;
+
+}
+.swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+    h4:hover{
+        color:aqua;
+    }
+ </style>
+</head>
+<body data-spy="scroll" data-target="#navbarResponsive">
+     <!--start home section-->
+     <div id="home">
+                <div class=" demo">
+                        <div class="content">
+                           <div id="large-header" class="large-header" style="height: 100vw; width:100vw;overflow: hidden;background-size: cover;position: relative;">
+                              <canvas id="demo-canvas" ></canvas>
+                              <h1 class="main-title"><span class="thin">Welcome To</span> ICON</h1>
+                              <main role="main" class="inner-cover">
+                                 <p class="lead">
+                                   <a href="#about"  class="btn btn-outline-light btn-lg ">LEARN MORE</a>
+                                 </p>
+                               </main>
+
+                           </div>
+                        </div>
+                </div>
+             <nav class="navbar navbar-expand-md navbar-dark background-image fixed-top">
+                <a class="navbar-brand" href="index.html"><img src="issa-logo.png" width="130" alt="ISSA"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                              <a href="#gallery" class="nav-link">Gallery</a>
+                          </li>
+                        <li class="nav-item">
+                            <a href="#events" class="nav-link">Events</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                              <a href="#team" class="nav-link">OUR TEAM</a>
+                          </li>
+    
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+    
+                    </ul>
+                </div>
+            </nav>
+            <!--start landing section-->
+            <div class="col-12 narrow text-center" id="sec1">
+                  <h1>What is ISSA?</h1>
+  
+                 <p>ISSA is the community of choice for international cybersecurity professionals dedicated to advancing individual growth, managing technology risk and protecting critical information and infrastructure.</p>
+  
+                <p>Information Systems Security Association (ISSA) is a not-for-profit, international professional organization of information security professionals and practitioners. It was founded in 1984, after work on its establishment started in 1982.  
+  
+  ISSA promotes the sharing of information security management practices through educational forums, publications and networking opportunities among security professionals.
+  
+  ISSA has an international membership base. The headquarters of ISSA is located in Vienna, Virginia.
+                 </p>
+                 <h1>ISSA STUDENT CHAPTER OF NIE <strong><span class="blue">(ICON)</span></strong></h1>
+                 <p>In an initiative taken up by the Department of Computer Science and Engineering under the guidance of Dr. G Ravi(Principal, NIE), Dr. H. D. Phaneendra(HOD CSE) and Dr. Shrirang. A Kulkarni(Professor, CSE), Ambitious Fourth semester students of The National Institute of Engineering, Mysore have collaborated to form and manage a local ISSA chapter at the college for the benefit of the student community.</p>
+                 <p>So come and embrace this wave of change, No more of the boring lectures and workshops where you barely learn anything. Let NIE-ISSA bring out the better of you and help you mould your way to success in your chosen career.</p>
+                 <br>
+                 <h4>Team NIE-ISSA</h4>
+               </div>
+
+            <!--end landing section-->
+
+         </div>
+         <!--End home section-->
+         <div id="gallery" class="offset"><!--start of gallery-->
+              <!-- Swiper -->
+  <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url(img/event2.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(img/event1.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(img/event3.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(img/event4.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(img/event5.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(img/event6.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(img/event7.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(img/event8.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(img/event2.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(img/event1.jpeg)"></div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+
+
+         </div><!--end of gallery-->
+         <!--start events section-->
+            <div id="events" class="offset">
+               <!--start of jumbotron-->
+               <div class="jumbotron">
+                <div class="narrow text-center">
+                     <div class=" col-12">
+                        <h3 class="heading">Upcoming Events</h3>
+                        <div class="heading-underline"></div>
+                        <div class="row text-center">
+                            <h4 class="text-center"> Don't be sad, we are coming back soon....</h4>
+                           <div class="col-md-4">
+                               <div class="upevents">
+                             
+                               </div>
+                            </div>
+                        </div>
+                 </div>       
+
+                </div><!--end of narrow-->
+                <div class="narrow text-center">
+                     <div class=" col-12">
+                        <h3 class="heading">past Events</h3>
+                        <div class="heading-underline"></div>
+                        <div class="card-deck">
+                              <!-- orientation -->
+                              <div class="cardSet1 card">
+                                 <div class="card-body">
+                                    <img style="width: 110%;" class="img-fluid" src="img/WhatsApp Image 2019-08-24 at 6.50.22 AM.jpeg" alt="event1">
+                                    <h3 class="pt-2 pb-2 text-center card-title">Orientation</h3>
+                                    <p><b>Organized by:</b> ICON</p>
+                                    <p><b>Venue:</b> MV HALL, gjb Block</p>
+                                    <p><b>Date:</b> 26 AUGUST 2019</p>
+                                 </div>
+                              </div>
+               
+                              <div class="cardSet2 card">
+                                    <div class="card-body">
+                                       <img style="width: 110%;" class="img-fluid" src="img/workshop8.jpg" alt="event1">
+                                       <h3 class="pt-2 pb-2 text-center card-title">C++ Workshop</h3>
+                                       <p><b>Organized by:</b> ICON</p>
+                                       <p><b>Venue:</b> MV HALL, gjb Block</p>
+                                       <p><b>Date:</b> 23/08/2019</p>
+                                    </div>
+                                 </div>
+               
+                                 <div class="cardSet2 card">
+                                       <div class="card-body">
+                                          <img style="width: 110%;" class="img-fluid" src="img/poster7.jpg" alt="event1">
+                                          <h3 class="pt-2 pb-2 text-center card-title">Orientation</h3>
+                                          <p><b>Organized by:</b> ICON</p>
+                                          <p><b>Venue:</b> MV HALL, gjb Block</p>
+                                          <p><b>Date:</b> 23/08/2019</p>
+                                       </div>
+                                    </div>
+               
+                           </div>
+                 </div>       
+
+                </div><!--end of narrow-->  
+                                 </div> <!--end of junbotron-->
+            </div>
+         <!--End events section-->
+         <!--start about section-->
+                <div id="about" class="offset">
+                   <div class="fixed-background">
+                       <div class="row dark text-center">
+                           <div class="col-12">
+                              <h3 class="heading">INCENTIVES</h3>
+                              <div class="heading-underline"></div>
+                           </div>
+                       <div class="col-md-4">
+                             <h3>MISSION</h3>
+                             <div class="feature">
+                                <i class="fas fa-code fa-3x"></i>
+                             </div>
+                             <p class="lead">Do whatever you want to do man but don't trouble your mother</p>
+                       </div>
+                       <div class="col-md-4">
+                           <h3>GOALS</h3>
+                           <div class="feature">
+                              <i class="fas fa-bold fa-3x"></i>
+                           </div>
+                           <p class="lead">To make ans awesome resume</p>
+                     </div>
+                     <div class="col-md-4">
+                           <h3>ACHIEVEMENTS</h3>
+                           <div class="feature">
+                              <i class="fas fa-code fa-3x"></i>
+                           </div>
+                           <p class="lead">Not yet...(Hoping for one)</p>
+                     </div>                                       
+
+                       </div><!--end of dark row-->
+                       <div class="fixed-wrap">
+                          <div class="fixed">
+                          </div>
+
+                       </div>
+
+                   </div><!--end of fixed background-->
+
+                </div>
+        <!--End about section-->
+         <!--start team section-->
+         <div id="team" class="offset">
+            <!--start of jumbotron-->
+                  <div class="jumbotron">
+                       <div class="col-12 text-center">
+                          <h3 class="heading">OUR TEAM</h3>
+                          <div class="heading-underline"></div>
+                       </div>
+                   <div class="row">
+                          
+                     <div class="col-md-6 members">
+                        <div class="row">
+                           <div class="col-md-4">
+                              <img src="img/Shubham - President.jpeg">
+                           </div>
+                           <div class="col-md-8">
+                               <blockquote>
+                                  <i class="fas fa-quote-left"></i>
+                                  Time is hard you need thing accordingly else you will lag behind
+                                 <hr class="members-hr">
+                                 <cite>&#8212;shubham,president</cite>
+                               </blockquote>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6 members">
+                           <div class="row">
+                              <div class="col-md-4">
+                                 <img src="img/Anubhav Singh - Vice-President.jpeg" alt="anubhav singh">
+                              </div>
+                              <div class="col-md-8">
+                                  <blockquote>
+                                     <i class="fas fa-quote-left"></i>
+                                   Pursue what catches your heart,not what catches your eyes
+                                    <hr class="members-hr">
+                                    <cite>&#8212;Anubhav Singh, vice president</cite>
+                                  </blockquote>
+                              </div>
+                           </div>
+                        </div>                 
+
+
+                   </div><!--end of row-->                   
+                   <div class="row">
+                          
+                        <div class="col-md-6 members">
+                           <div class="row">
+                              <div class="col-md-4">
+                                 <img src="img/Ketan Sahu - Technical Lead.jpeg">
+                              </div>
+                              <div class="col-md-8">
+                                  <blockquote>
+                                      <i class="fas fa-quote-left"></i>
+                                      What we do comes out of who we believe we are.
+                                      <hr class="members-hr">
+                                      <cite>&#8212;ketan sahu,Technical Lead</cite>
+                                  </blockquote>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6 members">
+                              <div class="row">
+                                 <div class="col-md-4">
+                                    <img src="img/Nikhil Kumar - Treasurer.jpeg">
+                                 </div>
+                                 <div class="col-md-8">
+                                     <blockquote>
+                                         <i class="fas fa-quote-left"></i>
+                                         Life is really generous to those who pursue their personal legend.
+                                         <hr class="members-hr">
+                                         <cite>&#8212;Nikhil kumar,Treasurer</cite>
+                                     </blockquote>
+                                 </div>
+                              </div>
+                           </div>                 
+
+   
+                      </div><!--end of row-->
+
+                      <div class="row">
+                          
+                           <div class="col-md-6 members">
+                              <div class="row">
+                                 <div class="col-md-4">
+                                    <img src="img/Sanjana Patel - Creative and Design Lead.jpeg">
+                                 </div>
+                                 <div class="col-md-8">
+                                     <blockquote>
+                                         <i class="fas fa-quote-left"></i>
+                                         The only person you are destined to become is the person you decide to be
+                                         <hr class="members-hr">
+                                         <cite>&#8212;sanjana Patel,Creative and Design Lead</cite>
+                                     </blockquote>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6 members">
+                                 <div class="row">
+                                    <div class="col-md-4">
+                                       <img src="img/Shourya sinha - Executive Secretary.jpeg">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <blockquote>
+                                            <i class="fas fa-quote-left"></i>
+                                            Don’t settle. Don’t finish crappy books. If you don’t like the menu, leave the restaurant. If you’re not on the right path, get off it
+                                            <hr class="members-hr">
+                                            <cite>&#8212;Shourya sinha, Executive Secretary</cite>
+                                        </blockquote>
+                                    </div>
+                                 </div>
+                              </div>                 
+      
+      
+                         </div><!--end of row-->
+                         <div class="row">
+                          
+                              <div class="col-md-6 members">
+                                 <div class="row">
+                                    <div class="col-md-4">
+                                       <img src="img/Viraj Shetty - Marketing Lead.jpeg">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <blockquote>
+                                            <i class="fas fa-quote-left"></i>
+                                            The ideals which have always shone before me and filled me with joy are goodness, beauty, and truth
+                                            <hr class="members-hr">
+                                            <cite>&#8212;Viraj Shetty,Marketing Lead</cite>
+                                        </blockquote>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-md-6 members">
+                                    <div class="row">
+                                       <div class="col-md-4">
+                                          <img src="img/Guruprasad V - Event Management lead.jpeg">
+                                       </div>
+                                       <div class="col-md-8">
+                                           <blockquote>
+                                               <i class="fas fa-quote-left"></i>
+                                               You can influence, direct and control your own environment. You can make your life what you want it to be.
+                                               <hr class="members-hr">
+                                               <cite>&#8212;Guruprasad v, Event Management</cite>
+                                           </blockquote>
+                                       </div>
+                                    </div>
+                                 </div>                 
+         
+         
+                            </div><!--end of row-->                      
+                  </div>
+            <!--end of jumbbotron-->
+            </div>
+         <!--End team section--> 
+         <!--start contact section--> 
+         <div id="contact" class="offset">
+             <footer id="bottomfot"class="row justify-content-center">
+                  <div class="col-md-5 text-center">
+                     <img src="issa-logo.png" width="130">
+                     <p>
+                        ISSA CHAPTER OF NIE
+                     </p>
+                     <strong>Contact Info</strong>
+                     <p>shubham (+91) 7070078010 <br>issa.nie19@gmail.com</p>
+                     <a href="" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                     <a href="" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                     <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                  </div>
+             
+               <hr class="socket">
+               &copy; ICON
+
+            </div>
+         </footer>
+         <!--End contact section--> 
+                        
+         <script src="swiper.min.js"></script>
+            <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+            <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
+            <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
+            <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <script>
+               var navbar = document.getElementsByClassName("navbar")[0]
+               var sec1 = document.getElementById("sec1");
+               window.addEventListener("scroll", function(){
+                  if(window.scrollY >= sec1.offsetTop-100){
+                     navbar.style.background = "rgba(0,0,0,0.8)"
+                  }
+                  else{
+                     navbar.style.background = "rgba(0,0,0,0.0)"
+                  }
+               })
+            </script>
+            <script>
+   var swiper = new Swiper('.swiper-container', {
+       effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+       },
+    });
+         </script>
+</body>
+</html>
